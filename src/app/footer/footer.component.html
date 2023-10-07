@@ -1,0 +1,17 @@
+<h1 style="padding-left: 11rem">FAQ</h1>
+<div class="cont">
+<div *ngFor="let i of questArray" class="main-div container">
+  <div class="h2-button-div">
+    <h2>{{i.h2}}</h2>
+    <button (click)="paragraph(p,$event)">+</button>
+  </div>
+  <div class="p-div" #p>
+    <p>{{i.p}}</p>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <a>Terms of Service</a>
+  <a>Privacy Policy</a>
+  <a>Site Map</a>
+</div>

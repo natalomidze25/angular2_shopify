@@ -1,0 +1,31 @@
+.banner-div{
+  background: #054a49 radial-gradient(circle at -48% 130%,#d0f224aa 24%,#054a49 45%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position:relative ;
+  color: white;
+  padding:6rem;
+  z-index: 1;
+}
+h2{
+  font-size: 3rem;
+  margin: auto;
+}
+.banner-div::before {
+  content: url('https://cdn.shopify.com/b/shopify-brochure2-assets/0d56efcd813bc72d0427f8863976c3a1.svgz');
+  display: block;
+  position: absolute;
+ right: 0;
+  top: -69px;
+}
+
+.banner-div::after {
+  content: url("https://cdn.shopify.com/b/shopify-brochure2-assets/1d5f94e0fb634025423acb965ece0b18.svgz");
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+}
+
